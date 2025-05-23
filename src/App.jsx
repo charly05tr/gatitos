@@ -26,13 +26,13 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col justify-center items-center bg-gradient bg-gradient-to-b from-red-500 to-blue-500 h-[vh100]'>
+    <div className='flex flex-col justify-center items-center bg-gradient bg-gradient-to-b from-red-500 to-blue-500 h-[dvh100]'>
       <button type="button" onClick={()=>{fetchingGatos(); setLoading(true)}} className='bg-blue-400 p-4 h-fit mt-5 w-fit cursor-pointer border-none rounded-lg font-semibold shadow-lg'>Cargar mas gatitos</button>
-    <div className='w-full p-10 grid grid-cols-[auto_auto_auto] gap-2 h-[vh100]'>
+    <div className='w-full p-10 grid grid-cols-[auto_auto_auto] gap-2 h-[dvh100]'>
     {
       (!loading && gatos)?gatos.map(gato => (
         <img key={gato.id} src={gato.url} width={gato.width} height={gato.height} className='fit rounded-lg shadow'></img>
-      )):<div className='absolute z-10 min-h-[vh100]'>Loading...</div>
+      )):<div className='absolute z-10 min-h-[dvh100]'>Loading...</div>
     }
 
     </div>
