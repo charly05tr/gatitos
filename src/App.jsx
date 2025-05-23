@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='flex flex-col justify-center items-center'>
-      <button type="button" onClick={()=>{fetchingGatos(); setLoading(true)}} className='bg-blue-400 p-4 h-fit mt-5 w-fit cursor-pointer border-none rounded-lg font-semibold shadow-lg'>Cargar mas gatitos</button>
+      <button type="button" onClick={()=>{fetchingGatos(); setLoading(true)}} className='p-4 h-fit mt-5 w-fit cursor-pointer border-none rounded-lg font-semibold shadow-lg'>Cargar mas gatitos</button>
     <div className='w-full p-10 grid grid-cols-[auto_auto_auto] gap-2 h-[dvh100]'>
     {
       (!loading && gatos)?gatos.map(gato => (
